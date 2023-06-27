@@ -21,6 +21,7 @@ const fromEl = document.getElementById("input-from");
 const toEl = document.getElementById("input-to");
 const publishBtn = document.getElementById("publish-btn");
 const endorsementListEl = document.getElementById("endorsement-list");
+let errorEl = document.getElementById("error");
 
 publishBtn.addEventListener("click", function () {
   let input = inputEl.value;
@@ -30,6 +31,9 @@ publishBtn.addEventListener("click", function () {
   let totalInput = [input, fromVal, toVal, 0];
 
   if (!input || !fromVal || !toVal) {
+    errorEl.textContent = "Please fill out all information before publishing";
+  } else {
+    errorEl.textContent = "";
     push(endorsementsListDB, totalInput);
   }
 

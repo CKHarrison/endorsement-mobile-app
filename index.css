@@ -34,6 +34,7 @@ body {
   align-items: center;
   gap: 1em;
   text-align: center;
+  margin: 0 auto;
 }
 
 .row {
@@ -88,6 +89,12 @@ body {
   font-size: 1.375rem;
   padding: 1.25em;
   cursor: pointer;
+}
+
+#error {
+  font-family: Inter, sans-serif;
+  font-size: 1.3rem;
+  color: red;
 }
 
 .subheading--text {
