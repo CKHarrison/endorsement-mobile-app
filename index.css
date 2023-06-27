@@ -1,0 +1,165 @@
+:root {
+  box-sizing: border-box;
+  --bg-body: #1b1924;
+  --bg-input: #444059;
+  --bg-btn: #28a9f1;
+  --bg-endorsement: #fff;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+  --color--input-text: #8f8f8f;
+  --color--btn-text: #04131c;
+  --color--white: #ffff;
+  --color--endorsement: #1b1924;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-body);
+}
+
+.container {
+  width: 90%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo {
+  width: 50%;
+  max-width: 100px;
+}
+
+.title--text {
+  color: var(--color--white);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5625rem;
+  margin-bottom: 0;
+}
+
+.input {
+  background: var(--bg-input);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  font-weight: var(--font-weight-regular);
+  flex-grow: 1;
+  width: 320px;
+  height: 120px;
+  padding: 0 0.5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+.person {
+  height: 60px;
+  width: 152px;
+  flex-grow: 1;
+}
+
+.publish-btn {
+  background: var(--bg-btn);
+  border: none;
+  border-radius: 8px;
+  color: var(--color--btn-text);
+  width: 320px;
+  flex-grow: 1;
+  font-family: Josefin Sans;
+  font-size: 1.375rem;
+  padding: 1.25em;
+  cursor: pointer;
+}
+
+.subheading--text {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Josefin Sans;
+  margin-bottom: 0;
+}
+
+#endorsement-list {
+  color: #fff;
+  list-style-type: none;
+  font-family: Inter, sans-serif;
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-regular);
+  padding: 0;
+  margin: 0;
+}
+
+.endorsement-text {
+  background: #fff;
+  color: var(--color--endorsement);
+  margin-bottom: 1em;
+  padding: 1.5em;
+  width: 320px;
+  flex-grow: 1;
+  text-align: left;
+  cursor: pointer;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.endorsement-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.recipient,
+.sender {
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.endorsement-body {
+  font-family: Inter, sans-serif;
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+#rating-btn {
+  font-family: Inter, sans-serif;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.rating--number {
+  font-family: Inter, serif;
+  font-size: 1rem;
+  color: #000;
+  font-weight: var(--font-weight-bold);
+}
