@@ -29,7 +29,9 @@ publishBtn.addEventListener("click", function () {
 
   let totalInput = [input, fromVal, toVal, 0];
 
-  push(endorsementsListDB, totalInput);
+  if (!input || !fromVal || !toVal) {
+    push(endorsementsListDB, totalInput);
+  }
 
   clearInput();
 });
